@@ -10,6 +10,8 @@ import Carousel_ from './pages/Carousel';
 import Intro from './Intro';
 import Error from './pages/Error';
 import Teacher from './pages/Teacher';
+import Contact from "./pages/contact";
+import Course from "./pages/course";
 
 function App() {
   return (
@@ -23,8 +25,8 @@ function App() {
             <Intro />
           </>}></Route>
         <Route path='/who' element={<Teacher/>}></Route>
-        <Route path='/courses' element={<div>강의 설명</div>}></Route>
-        <Route path='/contact' element={<div>연락 수단</div>}></Route>
+        <Route path='/courses' element={<Course />}></Route>
+        <Route path='/contact' element={<Contact />}></Route>
         <Route path='*' element={<Error />}></Route>
       </Routes>
     </div>
