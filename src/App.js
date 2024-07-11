@@ -2,7 +2,8 @@
 import './App.css';
 import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Card, Row, Col } from 'react-bootstrap';
 import { Routes, Route } from "react-router-dom";
 
 
@@ -17,6 +18,7 @@ function App() {
   return (
     <div className="App">
       <Navbar_ />
+
 
       <Routes>
         <Route path='/' element={
@@ -34,19 +36,36 @@ function App() {
 }
 
 function Navbar_() {
-  return (
-    <Navbar className='custom-navbar'>
-      <Container>
-        <Navbar.Brand href="/" style={{ color: "white" }}><strong>Martin Island</strong></Navbar.Brand>
-        <Nav className="me-auto">
-          <Nav.Link href="/" style={{ color: "white" }}>Home</Nav.Link>
-          <Nav.Link href="/who" style={{ color: "white" }}>Teacher</Nav.Link>
-          <Nav.Link href="/courses" style={{ color: "white" }}>Courses</Nav.Link>
-          <Nav.Link href="/contact" style={{ color: "white" }}>Contact Us</Nav.Link>
-        </Nav>
-      </Container>
-    </Navbar>
-  );
+    return (
+        <Navbar className="bg-body-tertiary" expand="lg">
+            <Container>
+                <Navbar.Brand href="/">
+                    <img
+                        alt=""
+                        src="/logogo.png"
+                        width={"30"}
+                        height={"30"}
+                        className="d-inline-block align-top"
+                    />{' '}
+                    <strong>Welcome to Martin Island 🏝️</strong>
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="ms-auto">
+                        <Nav.Link href="/" >Home</Nav.Link>
+                        <Nav.Link href="/who" >Teacher</Nav.Link>
+                        <NavDropdown title="Courses" id="basic-nav-dropdown">
+                            <NavDropdown.Item href="/courses">Python</NavDropdown.Item>
+                            <NavDropdown.Item href="/c_lang">C Language</NavDropdown.Item>
+                            <NavDropdown.Item href="/java">Java</NavDropdown.Item>
+                        </NavDropdown>
+                        <Nav.Link href="/contact">Contact Us</Nav.Link>
+
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
+    );
 }
 
 export default App;
