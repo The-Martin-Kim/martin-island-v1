@@ -13,7 +13,7 @@ function Intro() {
                     variant="contained"
                     color="success"
                     href={"/courses"}
-                    style={{ marginTop: '20px', padding: '10px 20px', fontSize: '18px' }}
+                    style={{ marginTop: '5px', padding: '8px 15px', fontSize: '18px' }}
                 >
                     탐험하러 가기
                 </Button>
