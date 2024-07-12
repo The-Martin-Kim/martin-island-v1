@@ -6,7 +6,7 @@ import img3 from '../img/003.png'
 
 function Carousel_() {
     return (
-      <div style={{ width: "60%", margin: "auto", marginTop: "20px" }}>
+      <div style={{ width: "80%", margin: "auto", marginTop: "20px" }}>
         <CCarousel controls dark>
           <CCarouselItem>
             <CImage className="d-block w-100" src={img1} alt="slide 1" />
