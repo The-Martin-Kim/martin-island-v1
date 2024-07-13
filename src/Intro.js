@@ -18,6 +18,7 @@ function Intro() {
                     탐험하러 가기
                 </Button>
             </Container>
+            <div><br/><br/><br/></div>
             <Box
                 className='text-center p-3'
                 sx={{
