@@ -15,19 +15,19 @@ const coursesOverview = [
 function CourseOverview() {
     return (
         <Container maxWidth="md" style={{ marginTop: '2rem' }}>
-            <Typography variant="h4" component="h1" gutterBottom style={{ textAlign: 'center', marginBottom: '2rem' }}>
-                섬에서 살아남기 위한 방법을 배워봅시다 !
+            <Typography variant="h4" component="h1" gutterBottom style={{ textAlign: 'center', marginBottom: '2rem', fontFamily: "GowunDodum-Regular"}}>
+                섬에서 살아남기 위한 생존 기술
             </Typography>
             <Grid container spacing={4}>
                 {coursesOverview.map((course, index) => (
                     <Grid item xs={12} md={4} key={index}>
-                        <Paper elevation={6} style={{ padding: '1rem', textAlign: 'center' }}>
-                            <Typography variant="h6" component="h2">
-                                <Link to={course.link} style={{ textDecoration: 'none', color: 'inherit' }}>
+                        <Link to={course.link} style={{ textDecoration: 'none' }}>
+                            <Paper elevation={6} style={{ padding: '1rem', textAlign: 'center' }}>
+                                <Typography variant="h6" component="h2" style={{ color: 'inherit', fontFamily: "GowunDodum-Regular" }}>
                                     {course.title}
-                                </Link>
-                            </Typography>
-                        </Paper>
+                                </Typography>
+                            </Paper>
+                        </Link>
                     </Grid>
                 ))}
             </Grid>

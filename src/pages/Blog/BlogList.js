@@ -29,17 +29,17 @@ const PostMeta = styled.div`
 const BlogList = () => {
     return (
         <div className="container mt-4">
-            <h1 className="mb-4">섬의 최초 개척자, Martin Kim이 들려주는 생존 비법</h1>
+            <h1 className="mb-4" style={{fontFamily: "GowunDodum-Regular"}}>섬의 최초 개척자, Martin Kim이 들려주는 생존 비법</h1>
             <Row>
                 {postsMeta.map(post => (
                     <Col md={4} key={post.id}>
                         <StyledCard>
                             <Card.Body>
-                                <PostMeta>
+                                <PostMeta style={{fontFamily: "GowunDodum-Regular"}}>
                                     <h2>{post.title}</h2>
                                     <p>By Martin Kim on {post.date}</p>
                                 </PostMeta>
-                                <Link to={`/blog/${post.id}`} className="btn btn-primary">읽어봅시다</Link>
+                                <Link to={`/blog/${post.id}`} className="btn btn-primary" style={{fontFamily: "GowunDodum-Regular"}}>읽어봅시다</Link>
                             </Card.Body>
                         </StyledCard>
                     </Col>

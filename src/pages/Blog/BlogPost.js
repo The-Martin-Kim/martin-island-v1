@@ -121,27 +121,27 @@ const BlogPost = () => {
         <StyledContainer>
             {content === 'Post not found' ? (
                 <div>
-                    <h1 style={{textAlign: "center"}}>아마 그런 글은 없을껄요?</h1>
+                    <h1 style={{textAlign: "center", fontFamily: "GowunDodum-Regular"}}>아마 그런 글은 없을껄요?</h1>
                     <br/>
                     <Link to="/blog">
-                    <Button variant="primary">목록으로 돌아가기</Button>
+                    <Button variant="primary" style={{fontFamily: "GowunDodum-Regular"}}>목록으로 돌아가기</Button>
                     </Link>
                 </div>
             ) : (
                 <StyledCard>
                     <Card.Body>
                         {postMeta && (
-                            <PostMeta>
+                            <PostMeta style={{fontFamily: "GowunDodum-Regular"}}>
                                 <h2>{postMeta.title}</h2>
                                 <p>By Martin Kim on {postMeta.date}</p>
                                 <hr/>
                             </PostMeta>
                         )}
-                        <MarkdownContent>
-                            <ReactMarkdown>{content}</ReactMarkdown>
+                        <MarkdownContent style={{fontFamily: "GowunDodum-Regular"}}>
+                            <ReactMarkdown >{content}</ReactMarkdown>
                         </MarkdownContent>
                         <Link to="/blog">
-                            <Button variant="primary">목록으로 돌아가기</Button>
+                            <Button variant="primary" style={{fontFamily: "GowunDodum-Regular"}}>목록으로 돌아가기</Button>
                         </Link>
                     </Card.Body>
                 </StyledCard>

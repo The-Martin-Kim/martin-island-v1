@@ -2,6 +2,17 @@
   text-align: center;
 }
 
+@font-face {
+  font-family: "GowunDodum-Regular";
+  font-weight: normal;
+  src: url("./fonts/GowunDodum-Regular.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: "GowunDodum-Regular", serif;
+}
+
 .custom-navbar {
   background-color: #B464EB;
 }

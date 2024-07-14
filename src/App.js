@@ -56,11 +56,11 @@ function Navbar_() {
                         height={"30"}
                         className="d-inline-block align-top"
                     />{' '}
-                    <strong>Welcome to Martin Island 🏝️</strong>
+                    <strong style={{fontFamily: "GowunDodum-Regular"}}>Welcome to Martin Island 🏝️</strong>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="ms-auto">
+                    <Nav className="ms-auto" style={{fontFamily: "GowunDodum-Regular"}}>
                         <Nav.Link href="/">Home</Nav.Link>
                         <Nav.Link href="/who">Teacher</Nav.Link>
                         <NavDropdown title="Courses" id="basic-nav-dropdown">
