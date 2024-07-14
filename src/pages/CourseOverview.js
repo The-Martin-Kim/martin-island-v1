@@ -4,8 +4,12 @@ import { Link } from 'react-router-dom';
 
 const coursesOverview = [
     { title: 'Python', link: '/courses/python' },
-    { title: 'C언어', link: '/courses/c' },
-    { title: 'Java', link: '/courses/java' }
+    { title: 'C언어 기초', link: '/courses/c1' },
+    { title: 'C언어 심화', link: '/courses/c2' },
+    { title: '데이터 분석', link: '/courses/data_science' },
+    { title: '머신러닝', link: '/courses/machine_learning' },
+    { title: 'Java', link: '/courses/java' },
+    { title: 'HTML', link: '/courses/html' }
 ];
 
 function CourseOverview() {

@@ -1,8 +1,8 @@
 import { CCarousel, CCarouselItem, CImage } from '@coreui/react';
 
-import img1 from '../img/001.png'
-import img2 from '../img/002.png'
-import img3 from '../img/003.png'
+import img1 from '../img/001.jpg'
+import img2 from '../img/002.jpg'
+import img3 from '../img/003.jpg'
 
 function Carousel_() {
     return (
