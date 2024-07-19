@@ -8,7 +8,7 @@ function Teacher() {
                     <Card className="text-center">
                         <Card.Img
                             variant="top"
-                            src="/logogo.png"
+                            src="/logo.png"
                             alt="Instructor"
                             className="rounded-circle mt-3"
                             style={{ width: '150px', height: '150px', objectFit: 'cover', margin: '0 auto' }}
